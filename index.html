@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Saaty Design — Crafted Elegance</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="crng"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-logo">
+    <span>S</span><span>A</span><span>A</span><span>T</span><span>Y</span>
+  </div>
+  <div class="ld-bar"><div class="ld-fill"></div></div>
+  <div class="ld-pct" id="ldp">Loading...</div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nl">SAATY DESIGN</a>
+  <button class="ncta" onclick="openModal()">Get Design</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hc">
+    <h1 class="htitle">SAATY <em>Design</em></h1>
+    <p class="htag">Crafted Elegance. Tailored for You.</p>
+
+    <div class="hrow">
+      <button class="bg" onclick="openModal()">Get Your Design</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="scard">
+    <h3>Custom Tailoring</h3>
+    <button onclick="openModal('Custom Tailoring')">Enquire</button>
+  </div>
+
+  <div class="scard">
+    <h3>Bridal Wear</h3>
+    <button onclick="openModal('Bridal Wear')">Enquire</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <input id="cfn" placeholder="Name">
+  <input id="cfp" placeholder="Phone">
+  <button onclick="subInline()">Send via WhatsApp</button>
+</section>
+
+<!-- MODAL -->
+<div class="moverlay" id="mo">
+  <div class="mbox">
+    <button onclick="closeModal()">X</button>
+
+    <input id="mn" placeholder="Name">
+    <input id="mp" placeholder="Phone">
+
+    <button onclick="subModal(event)">Submit</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
