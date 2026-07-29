@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAATY DESIGN — Luxury Bridal &amp; Custom Couture, Bengaluru</title>
+<meta name="description" content="SAATY DESIGN is a boutique couture atelier in Yelahanka, Bengaluru crafting handmade bridal wear, lehengas, sarees and festive fashion — designed for you, stitched by hand.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SIGNATURE THREAD (scroll-drawn, flows from the machine) ============ -->
+<div class="thread-layer" id="threadLayer" aria-hidden="true">
+  <div class="thread-origin" id="threadOrigin">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+      <circle cx="17" cy="17" r="16" fill="#241F1B" stroke="#B8975A" stroke-width="1"/>
+      <path d="M9 13h9a3 3 0 0 1 0 6H9M9 13l3-3M9 13l3 3M9 19l3 3M9 19l3-3" stroke="#D9C08F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="23" cy="16" r="1.1" fill="#D9C08F"/>
+    </svg>
+  </div>
+  <svg id="threadSvg" class="thread-svg">
+    <path id="threadPath" class="thread-path"></path>
+  </svg>
+  <div class="thread-needle" id="threadNeedle">
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+      <circle cx="11" cy="11" r="9" fill="#FAF7F2" stroke="#B8975A" stroke-width="1"/>
+      <path d="M6 11h10M13 8l3 3-3 3" stroke="#6E2530" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3515/2267/files/WhatsApp_Image_2026-07-29_at_11.32.50_AM-removebg-preview.png?v=1785305041" alt="SAATY DESIGN logo">
+    </a>
+    <nav class="nav__links">
+      <a href="#categories">Collections</a>
+      <a href="#about">Atelier</a>
+      <a href="#craft">Craftsmanship</a>
+      <a href="#stories">Stories</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="https://api.whatsapp.com/send/?phone=919187189813&text=Hi+SAATY+DESIGN%2C+I%27d+like+to+book+a+consultation.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="nav__cta">Book Consultation</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#categories">Collections</a>
+    <a href="#about">Atelier</a>
+    <a href="#craft">Craftsmanship</a>
+    <a href="#stories">Stories</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="https://api.whatsapp.com/send/?phone=919187189813&text=Hi+SAATY+DESIGN%2C+I%27d+like+to+book+a+consultation.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Book Consultation</a>
+  </div>
+</header>
+<div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+
+<main>
+
+<!-- ============ HERO — stitching machine video ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <video class="hero__video" autoplay muted loop playsinline
+      poster="https://images.pexels.com/photos/31070325/pexels-photo-31070325.jpeg?auto=compress&cs=tinysrgb&w=1920">
+      <source src="https://videos.pexels.com/video-files/8170061/8170061-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="hero__content">
+    <p class="eyebrow eyebrow--light">Bengaluru — Bridal &amp; Custom Couture</p>
+    <h1 class="hero__title">
+      <span class="line">Every Stitch</span>
+      <span class="line line--italic">Tells Your Story</span>
+    </h1>
+    <p class="hero__sub">Handcrafted bridal wear, lehengas and festive couture — designed only for you, never mass produced.</p>
+    <div class="hero__actions">
+      <a href="https://api.whatsapp.com/send/?phone=919187189813&text=Hi+SAATY+DESIGN%2C+I%27d+like+to+book+a+consultation.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn btn--gold magnetic">Book Consultation</a>
+      <a href="#categories" class="btn btn--ghost-light magnetic">Explore Collections</a>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</section>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>Bridal Lehengas</span><span>•</span><span>Designer Sarees</span><span>•</span>
+    <span>Bridal Blouses</span><span>•</span><span>Anarkalis</span><span>•</span>
+    <span>Kids Wear</span><span>•</span><span>Hand Embroidery</span><span>•</span>
+    <span>Custom Tailoring</span><span>•</span><span>Men&rsquo;s Ethnic Wear</span><span>•</span>
+    <span>Bridal Lehengas</span><span>•</span><span>Designer Sarees</span><span>•</span>
+    <span>Bridal Blouses</span><span>•</span><span>Anarkalis</span><span>•</span>
+    <span>Kids Wear</span><span>•</span><span>Hand Embroidery</span><span>•</span>
+    <span>Custom Tailoring</span><span>•</span><span>Men&rsquo;s Ethnic Wear</span><span>•</span>
+  </div>
+</div>
+
+
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about__grid">
+    <div class="about__image" data-parallax>
+      <img src="https://images.pexels.com/photos/30809485/pexels-photo-30809485.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Portrait of a bride in traditional couture attire, Saaty Design atelier">
+      <div class="about__image-tag">
+        <span class="serif">01</span>
+        <p>Handcrafted<br>in Yelahanka,<br>Bengaluru</p>
+      </div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow" data-reveal>The Atelier</p>
+      <h2 class="section-title" data-reveal>Couture, the Way<br>It Was Meant to Be Made.</h2>
+      <p class="about__lead" data-reveal>SAATY DESIGN is a boutique design studio — not a store, not a factory floor. Every garment that leaves our atelier has been sketched, fitted and finished for one person alone.</p>
+      <p data-reveal>We work close to the skin: your measurements, your occasion, the story you want your outfit to carry. From a bridal lehenga worked entirely by hand to a single custom blouse, nothing here is repeated, resized or reordered from a rack.</p>
+      <blockquote class="about__quote" data-reveal>
+        <span class="quote-mark">&ldquo;</span>
+        We don&rsquo;t dress you for an occasion. We dress you for the story you&rsquo;ll tell about it.
+      </blockquote>
+      <a href="#craft" class="text-link" data-reveal>See how a garment is made <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES (on the landing page) ============ -->
+<section class="collections" id="categories">
+  <div class="collections__head">
+    <p class="eyebrow" data-reveal>What We Craft</p>
+    <h2 class="section-title" data-reveal>Every Category.<br>One Standard of Craft.</h2>
+    <p class="collections__intro" data-reveal>Browse by occasion below, or bring us a reference and we will build the rest. Tap any category to see it in our Stories &amp; Portfolio.</p>
+  </div>
+
+  <div class="collections__grid">
+    <a class="collection-tile collection-tile--wide" id="cat-bridal" href="#stories" data-filter="bridal" data-reveal>
+      <img src="https://images.pexels.com/photos/33343591/pexels-photo-33343591.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Bridal lehenga collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">01</span>
+        <h3>Bridal &amp; Lehengas</h3>
+        <p>The centrepiece collection — heavy hand embroidery, custom silhouettes, made across 8–12 fittings.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-saree" href="#stories" data-filter="saree" data-reveal>
+      <img src="https://images.pexels.com/photos/28943474/pexels-photo-28943474.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Designer saree collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">02</span>
+        <h3>Designer Sarees</h3>
+        <p>Ready-to-wear and made-to-order, pre-draped or classic.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-blouse" href="#stories" data-filter="bridal" data-reveal>
+      <img src="https://images.pexels.com/photos/12791932/pexels-photo-12791932.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bridal blouse collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">03</span>
+        <h3>Bridal &amp; Custom Blouses</h3>
+        <p>Built around your saree, your blouse, your fit.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-anarkali" href="#stories" data-filter="bridal" data-reveal>
+      <img src="https://images.pexels.com/photos/16125951/pexels-photo-16125951.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Anarkali collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">04</span>
+        <h3>Anarkalis</h3>
+        <p>Flowing silhouettes for engagements, sangeet and reception.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-kurti" href="#stories" data-filter="saree" data-reveal>
+      <img src="https://images.pexels.com/photos/16803130/pexels-photo-16803130.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Designer kurti collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">05</span>
+        <h3>Designer Kurtis</h3>
+        <p>Everyday elegance, tailored to sit exactly right.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-kids" href="#stories" data-filter="kids" data-reveal>
+      <img src="https://images.pexels.com/photos/30723693/pexels-photo-30723693.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Kids ethnic wear collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">06</span>
+        <h3>Kids Wear</h3>
+        <p>Miniature couture for the little ones in the wedding party.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-embroidery" href="#stories" data-filter="embroidery" data-reveal>
+      <img src="https://images.pexels.com/photos/3772487/pexels-photo-3772487.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Hand embroidery detail">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">07</span>
+        <h3>Hand Embroidery</h3>
+        <p>Zardozi, Aari, Resham and Gota Patti, worked by hand.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-mens" href="#stories" data-filter="groom" data-reveal>
+      <img src="https://images.pexels.com/photos/35542192/pexels-photo-35542192.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Men's ethnic wear collection">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">08</span>
+        <h3>Men&rsquo;s Ethnic Wear</h3>
+        <p>Sherwanis and bandhgalas, tailored to match the bride.</p>
+      </div>
+    </a>
+    <a class="collection-tile" id="cat-tailoring" href="#book" data-reveal>
+      <img src="https://images.pexels.com/photos/5192861/pexels-photo-5192861.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Custom tailoring and alterations">
+      <div class="collection-tile__veil"></div>
+      <div class="collection-tile__info">
+        <span class="serif">09</span>
+        <h3>Custom Tailoring &amp; Alterations</h3>
+        <p>Precision fitting for garments made here or elsewhere.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ============ CRAFTSMANSHIP ============ -->
+<section class="craft" id="craft">
+  <div class="craft__head">
+    <p class="eyebrow eyebrow--light" data-reveal>From Sketch to Send-off</p>
+    <h2 class="section-title section-title--light" data-reveal>How a SAATY Garment<br>Comes to Be.</h2>
+  </div>
+  <div class="craft__steps">
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">01</span>
+      <h3>Sketch</h3>
+      <p>We translate your references and occasion into an original design, sketched by hand.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">02</span>
+      <h3>Pattern Making</h3>
+      <p>A paper pattern is drafted to your exact measurements — no standard sizing.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">03</span>
+      <h3>Fabric Selection</h3>
+      <p>Silks, velvets and organzas are sourced and matched to the design.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">04</span>
+      <h3>Cutting</h3>
+      <p>Each panel is cut by hand, fabric grain and motif placement considered piece by piece.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">05</span>
+      <h3>Hand Stitching</h3>
+      <p>Our karigars construct the garment by hand, seam by seam.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">06</span>
+      <h3>Embroidery</h3>
+      <p>Zardozi, Aari or Resham work is added, often taking weeks per piece.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">07</span>
+      <h3>Final Fitting</h3>
+      <p>You return for a final fitting; we adjust until it sits perfectly.</p>
+    </div>
+    <div class="craft__step" data-reveal>
+      <span class="craft__num">08</span>
+      <h3>Delivery</h3>
+      <p>Pressed, packed and delivered — ready for the day it was made for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOMIZATION ============ -->
+<section class="custom" id="custom">
+  <div class="custom__grid">
+    <div class="custom__text">
+      <p class="eyebrow" data-reveal>Design It With Us</p>
+      <h2 class="section-title" data-reveal>Start With a Feeling.<br>We&rsquo;ll Build the Rest.</h2>
+      <p data-reveal>Tell us the fabric, the colour, the embroidery you&rsquo;re drawn to — a stylist will take it from here, through measurements to a final fitting.</p>
+      <a href="#book" class="btn btn--outline magnetic" data-reveal>Begin Your Design</a>
+    </div>
+    <div class="custom__panel" data-reveal>
+      <div class="custom__row">
+        <span class="custom__label">Fabric</span>
+        <div class="custom__options" data-group="fabric">
+          <button class="custom__opt is-active" data-value="Silk">Silk</button>
+          <button class="custom__opt" data-value="Velvet">Velvet</button>
+          <button class="custom__opt" data-value="Organza">Organza</button>
+          <button class="custom__opt" data-value="Georgette">Georgette</button>
+        </div>
+      </div>
+      <div class="custom__row">
+        <span class="custom__label">Colour</span>
+        <div class="custom__options custom__options--swatch" data-group="colour">
+          <button class="custom__swatch is-active" style="--sw:#6E2530" data-value="Burgundy" aria-label="Burgundy"></button>
+          <button class="custom__swatch" style="--sw:#B8975A" data-value="Champagne Gold" aria-label="Champagne Gold"></button>
+          <button class="custom__swatch" style="--sw:#8C1C2C" data-value="Bridal Red" aria-label="Bridal Red"></button>
+          <button class="custom__swatch" style="--sw:#D9C08F" data-value="Warm Sand" aria-label="Warm Sand"></button>
+          <button class="custom__swatch" style="--sw:#2E2A25" data-value="Deep Charcoal" aria-label="Deep Charcoal"></button>
+        </div>
+      </div>
+      <div class="custom__row">
+        <span class="custom__label">Embroidery</span>
+        <div class="custom__options" data-group="embroidery">
+          <button class="custom__opt is-active" data-value="Zardozi">Zardozi</button>
+          <button class="custom__opt" data-value="Aari">Aari</button>
+          <button class="custom__opt" data-value="Resham">Resham</button>
+          <button class="custom__opt" data-value="Gota Patti">Gota Patti</button>
+        </div>
+      </div>
+      <div class="custom__summary">
+        <p>Your design so far</p>
+        <p class="custom__summary-text" id="customSummary">Silk, in Burgundy, with Zardozi embroidery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORIES / PORTFOLIO ============ -->
+<section class="stories" id="stories">
+  <div class="stories__head">
+    <p class="eyebrow" data-reveal>Real Weddings, Real Craft</p>
+    <h2 class="section-title" data-reveal>Stories &amp; Portfolio</h2>
+    <p class="collections__intro" data-reveal>Bride and groom dressing, kids in their festive best, sarees being draped, embroidery taking shape — a look inside the atelier and the moments our clients wear us to.</p>
+  </div>
+
+  <div class="stories__controls" data-reveal>
+    <div class="stories__tabs" role="tablist">
+      <button class="stories__tab is-active" data-tab="photos" role="tab" aria-selected="true">Photos</button>
+      <button class="stories__tab" data-tab="videos" role="tab" aria-selected="false">Videos &amp; Reels</button>
+    </div>
+    <div class="stories__filters">
+      <button class="stories__chip is-active" data-chip="all">All</button>
+      <button class="stories__chip" data-chip="bridal">Bride &amp; Groom</button>
+      <button class="stories__chip" data-chip="saree">Sarees</button>
+      <button class="stories__chip" data-chip="kids">Kids</button>
+      <button class="stories__chip" data-chip="embroidery">Embroidery</button>
+    </div>
+  </div>
+
+  <!-- Photos panel -->
+  <div class="stories__panel" data-panel="photos">
+    <a class="story-item story-item--tall" data-category="bridal" href="#cat-bridal">
+      <img src="https://images.pexels.com/photos/33343614/pexels-photo-33343614.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bride in an embroidered bridal lehenga">
+      <span class="story-item__tag">Bridal</span>
+      <span class="story-item__cap">Bride, ready for the mandap</span>
+    </a>
+    <a class="story-item" data-category="bridal" href="#cat-mens">
+      <img src="https://images.pexels.com/videos/31139763/bride-and-groom-cultural-wedding-hindu-wedding-indian-couple-31139763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bride and groom in traditional wedding attire">
+      <span class="story-item__tag">Bride &amp; Groom</span>
+      <span class="story-item__cap">Wedding day, matched in gold</span>
+    </a>
+    <a class="story-item" data-category="saree" href="#cat-saree">
+      <img src="https://images.pexels.com/photos/34155081/pexels-photo-34155081.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Woman draped in a silk saree">
+      <span class="story-item__tag">Saree</span>
+      <span class="story-item__cap">Classic silk, hand-finished edge</span>
+    </a>
+    <a class="story-item story-item--tall" data-category="kids" href="#cat-kids">
+      <img src="https://images.pexels.com/photos/30723693/pexels-photo-30723693.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Child twirling in traditional festive attire">
+      <span class="story-item__tag">Kids</span>
+      <span class="story-item__cap">Festive best, little ones included</span>
+    </a>
+    <a class="story-item" data-category="embroidery" href="#cat-embroidery">
+      <img src="https://images.pexels.com/photos/3838680/pexels-photo-3838680.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hand embroidering fine detail on fabric">
+      <span class="story-item__tag">Embroidery</span>
+      <span class="story-item__cap">Resham thread work, by hand</span>
+    </a>
+    <a class="story-item" data-category="embroidery" href="#cat-embroidery">
+      <img src="https://images.pexels.com/photos/12579916/pexels-photo-12579916.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Detail of ornate bridal embroidery and jewelry">
+      <span class="story-item__tag">Embroidery</span>
+      <span class="story-item__cap">Zardozi, close up</span>
+    </a>
+    <a class="story-item" data-category="bridal" href="#cat-mens">
+      <img src="https://images.pexels.com/photos/35542192/pexels-photo-35542192.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Groom in a traditional kurta">
+      <span class="story-item__tag">Groom</span>
+      <span class="story-item__cap">Kurta, tailored to match</span>
+    </a>
+    <a class="story-item story-item--tall" data-category="saree" href="#cat-saree">
+      <img src="https://images.pexels.com/photos/35108820/pexels-photo-35108820.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Woman in an elegant draped saree, festive occasion">
+      <span class="story-item__tag">Saree</span>
+      <span class="story-item__cap">Festive drape, reception ready</span>
+    </a>
+    <a class="story-item" data-category="embroidery" href="#cat-embroidery">
+      <img src="https://images.pexels.com/photos/11726516/pexels-photo-11726516.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Close detail of embroidered lehenga fabric">
+      <span class="story-item__tag">Embroidery</span>
+      <span class="story-item__cap">Aari hook work in progress</span>
+    </a>
+    <a class="story-item" data-category="bridal" href="#cat-bridal">
+      <img src="https://images.pexels.com/photos/12959396/pexels-photo-12959396.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Close detail of a red hand-embroidered bridal lehenga">
+      <span class="story-item__tag">Bridal</span>
+      <span class="story-item__cap">Bridal red, worked in gold</span>
+    </a>
+  </div>
+
+  <!-- Videos & Reels panel -->
+  <div class="stories__panel" data-panel="videos" hidden>
+    <a class="reel" data-category="embroidery" href="#cat-embroidery">
+      <video muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/31070325/pexels-photo-31070325.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <source src="https://videos.pexels.com/video-files/8170061/8170061-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <span class="reel__tag">Embroidery</span>
+      <span class="reel__cap">Inside the atelier — needle in motion</span>
+      <span class="reel__play">&#9658;</span>
+    </a>
+    <a class="reel" data-category="bridal" href="#cat-bridal">
+      <video muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/31139767/bride-and-groom-cultural-wedding-hindu-wedding-indian-couple-31139767.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <source src="https://videos.pexels.com/video-files/31139767/13305418_1920_1080_50fps.mp4" type="video/mp4">
+      </video>
+      <span class="reel__tag">Bride</span>
+      <span class="reel__cap">Getting ready, moment by moment</span>
+      <span class="reel__play">&#9658;</span>
+    </a>
+    <a class="reel" data-category="bridal" href="#cat-mens">
+      <video muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/31139763/bride-and-groom-cultural-wedding-hindu-wedding-indian-couple-31139763.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <source src="https://videos.pexels.com/video-files/31139763/13305464_1920_1080_50fps.mp4" type="video/mp4">
+      </video>
+      <span class="reel__tag">Bride &amp; Groom</span>
+      <span class="reel__cap">Wedding day rituals</span>
+      <span class="reel__play">&#9658;</span>
+    </a>
+  </div>
+  <p class="stories__note">Reference footage above is royalty-free stock media used as a placeholder — swap in SAATY's own client films and reels when ready.</p>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <p class="eyebrow" data-reveal>Client Stories</p>
+  <h2 class="section-title" data-reveal>Worn Once. Remembered Always.</h2>
+  <div class="testimonials__grid">
+    <figure class="testimonial" data-reveal>
+      <span class="quote-mark quote-mark--muted">&ldquo;</span>
+      <blockquote>My lehenga fit like it had been made for someone who'd worn it for years, not one who was putting it on for the first time. That's SAATY.</blockquote>
+      <figcaption>— Ananya R., Bride, Bengaluru</figcaption>
+    </figure>
+    <figure class="testimonial" data-reveal>
+      <span class="quote-mark quote-mark--muted">&ldquo;</span>
+      <blockquote>They redesigned my mother's old saree into a blouse I now wear more than anything new I own.</blockquote>
+      <figcaption>— Meghana K., Reception</figcaption>
+    </figure>
+    <figure class="testimonial" data-reveal>
+      <span class="quote-mark quote-mark--muted">&ldquo;</span>
+      <blockquote>Eight fittings, and every single one was worth it. The embroidery alone took my breath away.</blockquote>
+      <figcaption>— Ritika S., Bride, Mysuru</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="book">
+  <div class="cta__thread">
+    <svg width="100%" height="40" viewBox="0 0 600 40" preserveAspectRatio="none">
+      <path d="M0 20 C 50 2, 100 38, 150 20 S 250 2, 300 20 S 400 38, 450 20 S 550 2, 600 20" stroke="#B8975A" stroke-width="1" fill="none" opacity="0.6"/>
+    </svg>
+  </div>
+  <h2 class="cta__title" data-reveal>Let&rsquo;s Design Your<br><span class="serif-italic">Dream Outfit</span></h2>
+  <p class="cta__sub" data-reveal>Consultations by appointment, in-studio or on a call — tell us your date and we&rsquo;ll take it from there.</p>
+  <a href="#" class="btn btn--gold btn--large magnetic" id="ctaWhatsapp" data-reveal>Book on WhatsApp</a>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__border" aria-hidden="true"></div>
+  <div class="footer__top">
+    <div class="footer__brand">
+      <p class="footer__logo">SAATY <span>DESIGN</span></p>
+      <p>A boutique couture atelier in Yelahanka, Bengaluru, crafting bridal wear and festive fashion by hand — for brides, families and fashion-first clients across India.</p>
+      <div class="footer__social">
+        <a href="#" id="footerInstagram" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="#" id="footerWhatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="#categories">Collections</a>
+      <a href="#about">The Atelier</a>
+      <a href="#craft">Craftsmanship</a>
+      <a href="#stories">Stories &amp; Portfolio</a>
+      <a href="#testimonials">Client Stories</a>
+    </div>
+    <div class="footer__col">
+      <h4>Visit</h4>
+      <p id="footerAddress">1st Floor, Above Vetic Clinic, 283, MIG, 1st Phase, 15th A Cross, Yelahanka New Town, Bengaluru 560064</p>
+      <p id="footerPhone">+91 91 87189 813</p>
+      <p id="footerEmail">hello@saatydesign.com</p>
+    </div>
+    <div class="footer__col">
+      <h4>Hours &amp; Appointments</h4>
+      <p id="footerHours">Monday&ndash;Saturday, 10:00 AM&ndash;5:30 PM</p>
+      <p>By appointment recommended.</p>
+      <a href="https://api.whatsapp.com/send/?phone=919187189813&text=Hi+SAATY+DESIGN%2C+I%27d+like+to+book+a+consultation.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="text-link">Book Consultation <span>&rarr;</span></a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> SAATY DESIGN. All garments handcrafted to order.</p>
+    <div class="footer__legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
